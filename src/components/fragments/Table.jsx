@@ -1,6 +1,6 @@
 export default function Table() {
     return (
-        <div className="w-full mt-12">
+        <div className="w-full ml-5 mt-12">
             <p className="text-xl pb-3 flex items-center">
                 <i className="fas fa-list mr-3"></i> Latest Reports
             </p>

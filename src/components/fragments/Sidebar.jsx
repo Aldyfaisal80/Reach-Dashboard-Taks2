@@ -1,5 +1,5 @@
 // import AsideLink from "../elemets/dashboard/a"
-import AsideLink from "../elemets/dashboard/AsideLink"
+import AsideLink from "../elements/dashboard/AsideLink"
 
 export default function Sidebar() {
     return (

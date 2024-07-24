@@ -1,4 +1,4 @@
-import AsideLink from "../elemets/dashboard/AsideLink"
+import AsideLink from "../elements/dashboard/AsideLink"
 
 export default function SidebarMobile() {
     return (

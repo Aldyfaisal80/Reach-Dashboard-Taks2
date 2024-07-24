@@ -4,6 +4,7 @@ import Sidebar from "../../fragments/Sidebar"
 import SidebarMobile from "../../fragments/SidebarMobile"
 import Footer from "../../fragments/Footer"
 import Table from "../../fragments/Table";
+import Profile from "../../fragments/Profile"
 
 
 export default function DashboardMainLayouts () {
@@ -13,7 +14,7 @@ export default function DashboardMainLayouts () {
 
     <div className="w-full flex flex-col h-screen ">
         {/* <!-- Desktop Header --> */}
-        {/* <Profile /> */}
+        <Profile />
 
         {/* <!-- Mobile Header & Nav-- > */}
         <SidebarMobile />
