@@ -3,8 +3,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function Chart() {
     return (
-        <main className="w-full flex-grow p-6">
-            <h1 className="text-3xl text-black pb-6">Dashboard</h1>
+        <main className="w-full flex-grow">
             <div className="flex flex-wrap mt-6">
                 {/* Box Chart Left */}
                 <div className="w-full lg:w-1/2 pr-0 lg:pr-2">

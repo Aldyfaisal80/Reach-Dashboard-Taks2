@@ -1,7 +1,11 @@
+import Chart from "../../components/fragments/Chart";
+
 export default function Dashboard() {
     return (
-        <div className="w-full ml-5 mt-12">
-            <p className="text-xl pb-3 flex items-center">
+        <div className="w-full ml-5 mt-5">
+            <h1>Dashboard</h1>
+            <Chart />
+            <p className="text-xl mt-6 pb-3 flex items-center">
                 <i className="fas fa-list mr-3"></i> Latest Reports
             </p>
             <div className="bg-white overflow-auto">

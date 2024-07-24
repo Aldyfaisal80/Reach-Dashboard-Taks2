@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-export default function AsideLink({href, children}) {
+export default function AsideLink({ href, children }) {
     const location = useLocation();
     const isActive = location.pathname === href;
     return (
