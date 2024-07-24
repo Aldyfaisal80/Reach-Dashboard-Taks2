@@ -1,4 +1,4 @@
-import DashboardMainLayouts from "./components/layouts/dashboard/DashboardMainLayouts";
+import DashboardMainLayouts from "../src/components/layouts/dashboard/DashboardMainLayouts";
 import BlankPages from "./pages/sub-pages/BlankDashboard";
 import Calendar from "./pages/sub-pages/CalendarDashboard";
 import Form from "./pages/sub-pages/FormDasboard";
@@ -13,7 +13,7 @@ import {
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<DashboardMainLayouts />}>
+        <Route path="/dashboard" element={<DashboardMainLayouts />}>
             <Route path="blankpages" element={<BlankPages />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="form" element={<Form />} />
