@@ -3,9 +3,9 @@ import AsideLink from "../elements/dashboard/AsideLink";
 
 export default function Sidebar() {
     return (
-        <aside className="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+        <aside className="relative bg-sidebar font-Poppins h-screen w-64 hidden sm:block shadow-xl">
             <div className="p-6">
-                <AsideLink href="/dashboard" className="text-white text-6xl font-semibold uppercase hover:text-gray-300">Admin</AsideLink>
+                <AsideLink href="/dashboard" className="text-white text-3xl font-semibold uppercase hover:text-gray-300">Admin</AsideLink>
                 <button className="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                     <FaPlus className="mr-3" /> New Report
                 </button>
@@ -36,10 +36,11 @@ export default function Sidebar() {
                     Calendar
                 </AsideLink>
             </nav>
-            <AsideLink href="#" className="absolute w-full upgrade-btn bottom-0 active-nav-link text-white flex items-center justify-center py-4">
+            <AsideLink href="#" className="absolute bottom-0  w-full upgrade-btn text-white flex items-center justify-center">
                 <FaArrowCircleUp className="mr-3" />
                 Upgrade to Pro!
             </AsideLink>
+
         </aside>
     )
 }
