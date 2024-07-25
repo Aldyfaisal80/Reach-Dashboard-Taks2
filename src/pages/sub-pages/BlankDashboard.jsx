@@ -1,5 +1,7 @@
 export default function BlankDashboard() {
     return (
-        <h1>Blank Page</h1>
+        <div className="p-6">
+            <h1 className="text-3xl">Blank Page</h1>
+        </div>
     )
 }

@@ -5,7 +5,7 @@ export default function Dashboard() {
         <div className="relative w-full flex flex-col h-screen overflow-y-hidden">
             <div className="w-full h-screen overflow-x-hidden border-t flex flex-col">
                 <div className="w-full flex-grow p-6 ">
-                    <h1>Dashboard</h1>
+                    <h1 className="text-3xl">Dashboard</h1>
                     <Chart />
                     <p className="text-xl mt-6 pb-3 flex items-center">
                         <i className="fas fa-list mr-3"></i> Latest Reports
