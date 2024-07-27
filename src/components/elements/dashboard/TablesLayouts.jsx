@@ -11,7 +11,7 @@ const TablesHeadOne = ({title}) => {
     return (
         <thead className="bg-gray-800 text-white">
             <tr>
-                <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">{title}</th>
+                <th scope="col" className=" w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">{title}</th>
             </tr>
         </thead>
     )
