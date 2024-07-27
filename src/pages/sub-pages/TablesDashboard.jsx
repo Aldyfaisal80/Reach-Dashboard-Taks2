@@ -1,16 +1,27 @@
+import TablesLayouts from "../../components/elements/dashboard/TablesLayouts"
 export default function TablesDashboard() {
     return (
         <div className="relative w-full flex flex-col h-screen overflow-y-hidden">
             <div className="w-full h-screen overflow-x-hidden border-t flex flex-col">
                 <main className="w-full flex-grow p-6">
                     <h1 className="text-3xl text-black pb-6">Tables</h1>
-
                     <div className="w-full mt-6">
                         <p className="text-xl pb-3 flex items-center">
                             <i className="fas fa-list mr-3"></i> Table Example
                         </p>
                         <div className="bg-white overflow-auto">
-                            <table className="min-w-full bg-white">
+                            <TablesLayouts>
+                                <TablesLayouts.TablesHeadOne title="Name" />
+                                <TablesLayouts.TablesHeadOne title="Last Name" />
+                                <TablesLayouts.TablesHeadOne title="Phone" />
+                                <TablesLayouts.TablesHeadOne title="Email" />
+                                <TablesLayouts.TablesBodyOne firstName="Lian" lastName="Smith" phone="622322662" email="jonsmith@mail.com" />
+                                <TablesLayouts.TablesBodyOne firstName="Emma" lastName="Johnson" phone="622322662" email="jonsmith@mail.com" />
+                                <TablesLayouts.TablesBodyOne firstName="John" lastName="Doe" phone="622322662" email="jonsmith@mail.com" />
+                                <TablesLayouts.TablesBodyOne firstName="Jane" lastName="Doe" phone="622322662" email="jonsmith@mail.com" />
+                                <TablesLayouts.TablesBodyOne firstName="Mary" lastName="Doe" phone="622322662" email="jonsmith@mail.com" />
+                            </TablesLayouts>
+                            {/* <table className="min-w-full bg-white">
                                 <thead className="bg-gray-800 text-white">
                                     <tr>
                                         <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
@@ -45,7 +56,7 @@ export default function TablesDashboard() {
                                         <td className="text-left py-3 px-4"><a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table> */}
                         </div>
                         <p className="pt-3 text-gray-600">
                             Source: <a className="underline" href="https://tailwindcomponents.com/component/striped-table">https://tailwindcomponents.com/component/striped-table</a>
@@ -57,7 +68,7 @@ export default function TablesDashboard() {
                             <i className="fas fa-list mr-3"></i> Table Example
                         </p>
                         <div className="bg-white overflow-auto">
-                            <table className="text-left w-full border-collapse">Border collapse doesn't work on this site yet but it's available in newer tailwind versions 
+                            <table className="text-left w-full border-collapse">Border collapse doesn't work on this site yet but it's available in newer tailwind versions
                                 <thead>
                                     <tr>
                                         <th className="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Name</th>
