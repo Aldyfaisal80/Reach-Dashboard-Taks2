@@ -17,9 +17,6 @@ export default function FormDasboard() {
                         </div>
 
                         <div className="w-full lg:w-1/2 mt-6 pl-0 lg:pl-2">
-                            <p className="text-xl pb-6 flex items-center">
-                                <i className="fas fa-list mr-3"></i> Checkout Form
-                            </p>
                             <div className="leading-loose">
                                <CheckoutForm />
                             </div>
